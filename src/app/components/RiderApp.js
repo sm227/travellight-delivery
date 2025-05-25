@@ -43,9 +43,9 @@ export function RiderApp() {
   };
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-white dark:bg-gray-900">
       <Header currentStep={currentStep} isWorking={isWorking} />
-      <main className="flex-1 overflow-auto">
+      <main className="flex-1 overflow-auto bg-gray-50 dark:bg-gray-900">
         <div className="pb-24">
           {renderCurrentStep()}
         </div>

@@ -21,12 +21,12 @@ export function Header({ currentStep, isWorking }) {
   };
 
   return (
-    <header className="bg-blue-600 text-white py-4 px-5 shadow-md">
+    <header className="bg-blue-600 dark:bg-blue-800 text-white py-4 px-5 shadow-md">
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-bold">TravelRider</h1>
         {isWorking && (
           <div className="flex items-center">
-            <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse mr-2"></div>
+            <div className="w-3 h-3 bg-green-400 dark:bg-green-500 rounded-full animate-pulse mr-2"></div>
             <span className="text-sm font-medium">운행중</span>
           </div>
         )}
